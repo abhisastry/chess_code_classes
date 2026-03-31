@@ -507,13 +507,13 @@ pre {
     line-height: 1.8;
 }
 
-/* Tablet Responsive adjustments */
-@media (max-width: 900px) {
-    .showcase-grid, .curriculum-container {
-        grid-template-columns: 1fr;
+/* Phone-specific adjustments */
+@media (max-width: 600px) {
+    .showcase-grid, .curriculum-container, .about-grid, .bento-grid, .reviews-grid, .skills-grid {
+        grid-template-columns: 1fr !important;
     }
     .mega-title {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
     .navbar {
         height: auto;
@@ -529,20 +529,7 @@ pre {
     }
     .content-wrapper {
         margin-top: calc(var(--nav-height) + 60px);
-        padding: 2rem 1rem;
-    }
-    .page-section {
-        padding: 2rem;
-    }
-}
-
-/* Phone-specific overrides */
-@media (max-width: 600px) {
-    .about-grid, .bento-grid, .reviews-grid, .skills-grid {
-        grid-template-columns: 1fr !important;
-    }
-    .mega-title {
-        font-size: 2rem;
+        padding: 1.5rem 1rem;
     }
     .page-section {
         padding: 1.5rem 1rem;
