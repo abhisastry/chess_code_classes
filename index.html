@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chess and Coding Summer Camp">
+    <title>Logic Legends: Chess & Code</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+    <nav class="navbar card">
+        <div class="logo">
+            <span class="primary-text">Logic</span><span class="sub-text">Legends</span>
+        </div>
+        <div class="nav-right">
+            <ul class="nav-links">
+                <li><button class="nav-btn active" data-target="about-me">About Us</button></li>
+                <li><button class="nav-btn" data-target="curriculum">Camp Info</button></li>
+                <li><button class="nav-btn highlight-btn" data-target="cool-page">Forms</button></li>
+                <!-- Hidden Reviews Tab. Remove 'is-hidden' class to activate -->
+                <li><button class="nav-btn is-hidden" data-target="reviews-page">Reviews</button></li>
+            </ul>
+            <img src="assets/camp_logo.png" class="nav-badge" alt="Logic Legends Camp Badge">
+        </div>
+    </nav>
+
+    <main class="content-wrapper">
+        <!-- Page 1: About Us -->
+        <section id="about-me" class="page-section active fade-in">
+            <div class="hero-header" style="margin-bottom: 2rem;">
+                <h1 class="mega-title">About <span class="primary-text">Us</span></h1>
+            </div>
+            
+            <div class="about-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; line-height: 1.8;">
+                
+                <!-- Left Box: Adya -->
+                <div class="about-card card" style="padding: 2.5rem; border-radius: 8px; display: flex; flex-direction: column;">
+                    <img src="assets/adya.jpg" alt="Adya Profile Photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem auto; display: block; border: 3px solid var(--accent-primary); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h2 style="margin-bottom: 1.5rem; text-align: center; color: var(--accent-primary);">Adya</h2>
+                    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start;">
+                        <p style="margin-bottom: 1rem;">Hi! My name is Adya!!!</p>
+                        <p style="margin-bottom: 1rem;">I am currently a sophomore at LASA High School, with a passion for working with kids, and technology! I tutor at Kumon, and serve as a teaching assistant for several classes at my school. These experiences have strengthened my love for education and mentorship.</p>
+                        <p>Outside of academics, I’m especially interested in using technology to improve everyday life, and I’ve built several applications focused on social impact. I have participated in Future Business Leader Conferences, representing my school. Chess has been a big part of my life since childhood, and I’m proud to hold the title of Arena FIDE Master. I also enjoy playing string and wind instruments such as violin, guitar, and flute! I enjoy playing many sports, basketbalI being my favorite! I love attending Robotics Competitions, and have participated in Science Olympiad for 3 years! I plan to pursue a degree in engineering / computer science.</p>
+                    </div>
+                </div>
+
+                <!-- Right Box: Abhi -->
+                <div class="about-card card" style="padding: 2.5rem; border-radius: 8px; display: flex; flex-direction: column;">
+                    <img src="assets/abhi.jpg" alt="Abhi Profile Photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem auto; display: block; border: 3px solid var(--accent-primary); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h2 style="margin-bottom: 1.5rem; text-align: center; color: var(--accent-primary);">Abhi</h2>
+                    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start;">
+                        <p style="margin-bottom: 1rem;">Hello, I am Abhi!</p>
+                        <p style="margin-bottom: 1rem;">I am a 6th grader at Kealing Middle School! I have been playing on the chessboard ever since I turned five years old. For the last seven years, chess has been a huge part of my life. I currently hold the title of Arena Fide Master (AFM), and have a rating of around 2000 online. Though I really enjoy the speed and excitement of online chess, nothing beats the excitement of a live event, and you will often find me participating in various tournaments all around the Austin area.</p>
+                        <p style="margin-bottom: 1rem;">When I am not in front of the board, I am usually building and experimenting with code. I have been coding since I was six years old, and have developed a few apps. I eventually found a big interest in artificial intelligence (AI), and love learning how it works. I really enjoy tinkering with the code of programs to see how they really work, and how I can make them more effective.</p>
+                        <p>I love participating in Science Olympiad tournaments, Robotics Competitions, and Competitive Math events. In addition to exercising my brain, I love staying active. Basketball, tennis, and table tennis are my favorite sports to play.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Page 2: Curriculum -->
+        <section id="curriculum" class="page-section card fade-in">
+            <h1>The <span class="primary-text">Curriculum</span></h1>
+            <p class="placeholder-text" style="margin-bottom: 2rem;">We will cater to your students level. This is just
+                the Base Curriculum.</p>
+            <div class="curriculum-split">
+                <!-- Left Side: Table -->
+                <div class="curriculum-left card" style="padding: 2rem; border-radius: 8px;">
+                    <div class="table-container" style="overflow-x: auto;">
+                        <table class="curriculum-table">
+                            <thead>
+                                <tr>
+                                    <th>Week</th>
+                                    <th>♟️ Chess</th>
+                                    <th>💻 Block Code</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>Week 1</strong></td>
+                                    <td><strong>Board Dynamics and Fundamentals</strong><br/>Goal: Master the Rules and the board.</td>
+                                    <td><strong>Fundamentals & The "What" of Coding</strong><br/>Goal: Understand the interface, sequencing, and basic motion.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Week 2</strong></td>
+                                    <td><strong>Tactics and Calculation</strong><br/>Goal: Learn the basic tactics, how to solve puzzles, and checkmate patterns.</td>
+                                    <td><strong>Logic & Control Structures</strong><br/>Goal: Make programs interactive, repetitive, and smart.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Week 3</strong></td>
+                                    <td><strong>Interactive Game Play</strong><br/>Goal: Learn new openings, how to navigate endgames, and how to play with proper etiquette.</td>
+                                    <td><strong>Project-Based Learning & Debugging</strong><br/>Goal: Build a complete game, debug errors, and transition towards text-based thinking.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="camp-time">
+                        Camp Time: <span class="primary-text">9 am - 12 pm</span>
+                    </div>
+                </div>
+
+                <!-- Right Side: Fees -->
+                <div class="curriculum-right card">
+                    <h2>Camp <span class="primary-text">Fees</span></h2>
+                    <ul class="fees-list">
+                        <li>
+                            <span class="weeks">1 Week</span>
+                            <span class="price">$75</span>
+                        </li>
+                        <li>
+                            <span class="weeks">2 Weeks</span>
+                            <span class="price">$125</span>
+                        </li>
+                        <li>
+                            <span class="weeks">3 Weeks</span>
+                            <span class="price">$175</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Page 3: Forms Page -->
+        <section id="cool-page" class="page-section fade-in">
+            <div class="hero-header">
+                <h1 class="mega-title">Master The Board & <br /><span class="primary-text">The Code</span></h1>
+                <p class="placeholder-text" style="margin: 0 auto;">Build real-world skills through the timeless
+                    strategy of chess.</p>
+                <div class="cta-container" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://forms.gle/LczvBBdViwqVMhr19" target="_blank" rel="noopener noreferrer"
+                        class="primary-button">
+                        Interest Form
+                    </a>
+                    <a href="https://forms.gle/PVnu9RpVcyGEgc8Y9" target="_blank" rel="noopener noreferrer"
+                        class="secondary-button">
+                        Feedback Form
+                    </a>
+                </div>
+            </div>
+
+            <div class="showcase-grid">
+                <!-- Image 1 -->
+                <div class="art-card card">
+                    <img src="assets/realistic_chess_laptop_1774813769151.png"
+                        alt="A professional photograph of a pristine wooden chessboard next to a modern silver laptop displaying Python code in a bright, clean, sunlit room.">
+                    <div class="art-overlay">Strategic Foundations</div>
+                </div>
+
+                <!-- Code Snippet -->
+                <div class="code-card card">
+                    <div class="mac-controls">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <pre><code class="language-python">
+<span class="comment"># Initialize AI Engine</span>
+<span class="keyword">def</span> <span class="func">minimax</span><span class="punctuation">(</span>node<span class="punctuation">,</span> depth<span class="punctuation">,</span> is_maximizing<span class="punctuation">):</span>
+    <span class="keyword">if</span> depth <span class="operator">==</span> <span class="number">0</span> <span class="keyword">or</span> is_terminal<span class="punctuation">(</span>node<span class="punctuation">):</span>
+        <span class="keyword">return</span> evaluate<span class="punctuation">(</span>node<span class="punctuation">)</span>
+
+    <span class="keyword">if</span> is_maximizing<span class="punctuation">:</span>
+        value <span class="operator">=</span> <span class="builtin">-float</span><span class="punctuation">(</span><span class="string">'inf'</span><span class="punctuation">)</span>
+        <span class="keyword">for</span> child <span class="keyword">in</span> get_children<span class="punctuation">(</span>node<span class="punctuation">):</span>
+            value <span class="operator">=</span> <span class="builtin">max</span><span class="punctuation">(</span>value<span class="punctuation">,</span> minimax<span class="punctuation">(</span>child<span class="punctuation">,</span> depth<span class="operator">-</span><span class="number">1</span><span class="punctuation">,</span> <span class="boolean">False</span><span class="punctuation">))</span>
+        <span class="keyword">return</span> value
+    <span class="keyword">else</span><span class="punctuation">:</span>
+        <span class="comment"># Analyze opponent's prime moves...</span>
+        ...
+                    </code></pre>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Page 4: Reviews (Hidden by default) -->
+        <section id="reviews-page" class="page-section fade-in is-hidden">
+            <div class="hero-header">
+                <h1 class="mega-title">Camp <span class="primary-text">Reviews</span></h1>
+                <p class="placeholder-text" style="margin: 0 auto;">See what our students and parents have to say about
+                    Logic Legends!</p>
+            </div>
+
+            <!-- Approved Reviews Container -->
+            <div class="reviews-grid">
+                <!-- Example of an approved review. Hardcode future approved reviews like this -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <span class="reviewer-name">Sample Parent (Edit/Delete Later)</span>
+                        <span class="review-stars">★★★★★</span>
+                    </div>
+                    <p class="review-body">"Abhi is a fantastic instructor! The balance between chess strategy and
+                        introductory block coding was perfect for my 6th grader. Highly recommended!"</p>
+                </div>
+            </div>
+
+            <!-- Review Submission Form -->
+            <div class="submission-form">
+                <h2 style="margin-bottom: 1.5rem;">Submit Your Experience</h2>
+                <!-- Replace 'YOUR_FORM_ID' with your Formspree ID from your email configuration -->
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <div class="form-group">
+                        <label for="reviewer-name">Name</label>
+                        <input type="text" id="reviewer-name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="rating">Star Rating (1-5)</label>
+                        <select id="rating" name="rating" required>
+                            <option value="5">★★★★★ - Excellent</option>
+                            <option value="4">★★★★☆ - Great</option>
+                            <option value="3">★★★☆☆ - Average</option>
+                            <option value="2">★★☆☆☆ - Poor</option>
+                            <option value="1">★☆☆☆☆ - Terrible</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="review">Your Review</label>
+                        <textarea id="review" name="review" rows="5" required
+                            placeholder="What did you love about the camp?"></textarea>
+                    </div>
+                    <button type="submit" class="primary-button" style="width: 100%;">Submit for Approval</button>
+                    <p class="sub-text" style="font-size: 0.9rem; margin-top: 1rem; text-align: center;">Your review
+                        will be sent to the camp director for moderation before appearing on this page.</p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
