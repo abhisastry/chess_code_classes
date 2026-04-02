@@ -258,6 +258,12 @@ h1 {
     gap: 1.5rem;
 }
 
+.dates-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
 .curriculum-right {
     background: #f8fafc;
     padding: 2rem;
@@ -521,7 +527,7 @@ pre {
 
 /* Phone-specific adjustments */
 @media (max-width: 600px) {
-    .showcase-grid, .curriculum-split, .about-grid, .bento-grid, .reviews-grid, .skills-grid {
+    .showcase-grid, .curriculum-split, .dates-split, .about-grid, .bento-grid, .reviews-grid, .skills-grid {
         grid-template-columns: 1fr !important;
     }
     .mega-title {
