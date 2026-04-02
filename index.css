@@ -252,6 +252,12 @@ h1 {
     border-radius: 8px;
 }
 
+.curriculum-right-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 .curriculum-right {
     background: #f8fafc;
     padding: 2rem;

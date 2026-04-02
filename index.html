@@ -25,8 +25,8 @@
         </div>
         <div class="nav-right">
             <ul class="nav-links">
-                <li><button class="nav-btn active" data-target="about-me">About Us</button></li>
-                <li><button class="nav-btn" data-target="curriculum">Camp Info</button></li>
+                <li><button class="nav-btn active" data-target="curriculum">Camp Info</button></li>
+                <li><button class="nav-btn" data-target="about-me">About Us</button></li>
                 <li><button class="nav-btn highlight-btn" data-target="cool-page">Forms</button></li>
                 <!-- Hidden Reviews Tab. Remove 'is-hidden' class to activate -->
                 <li><button class="nav-btn is-hidden" data-target="reviews-page">Reviews</button></li>
@@ -36,42 +36,8 @@
     </nav>
 
     <main class="content-wrapper">
-        <!-- Page 1: About Us -->
-        <section id="about-me" class="page-section active fade-in">
-            <div class="hero-header" style="margin-bottom: 2rem;">
-                <h1 class="mega-title">About <span class="primary-text">Us</span></h1>
-            </div>
-            
-            <div class="about-grid">
-                
-                <!-- Left Box: Adya -->
-                <div class="about-card card" style="padding: 2.5rem; border-radius: 8px; display: flex; flex-direction: column;">
-                    <img src="assets/adya.jpg" alt="Adya Profile Photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem auto; display: block; border: 3px solid var(--accent-primary); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <h2 style="margin-bottom: 1.5rem; text-align: center; color: var(--accent-primary);">Adya</h2>
-                    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start;">
-                        <p style="margin-bottom: 1rem;">Hi! My name is Adya!!!</p>
-                        <p style="margin-bottom: 1rem;">I am currently a sophomore at LASA High School, with a passion for working with kids, and technology! I tutor at Kumon, and serve as a teaching assistant for several classes at my school. These experiences have strengthened my love for education and mentorship.</p>
-                        <p>Outside of academics, I’m especially interested in using technology to improve everyday life, and I’ve built several applications focused on social impact. I have participated in Future Business Leader Conferences, representing my school. Chess has been a big part of my life since childhood, and I’m proud to hold the title of Arena FIDE Master. I also enjoy playing string and wind instruments such as violin, guitar, and flute! I enjoy playing many sports, basketbalI being my favorite! I love attending Robotics Competitions, and have participated in Science Olympiad for 3 years! I plan to pursue a degree in engineering / computer science.</p>
-                    </div>
-                </div>
-
-                <!-- Right Box: Abhi -->
-                <div class="about-card card" style="padding: 2.5rem; border-radius: 8px; display: flex; flex-direction: column;">
-                    <img src="assets/abhi.jpg" alt="Abhi Profile Photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem auto; display: block; border: 3px solid var(--accent-primary); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
-                    <h2 style="margin-bottom: 1.5rem; text-align: center; color: var(--accent-primary);">Abhi</h2>
-                    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start;">
-                        <p style="margin-bottom: 1rem;">Hello, I am Abhi!</p>
-                        <p style="margin-bottom: 1rem;">I am a 6th grader at Kealing Middle School! I have been playing on the chessboard ever since I turned five years old. For the last seven years, chess has been a huge part of my life. I currently hold the title of Arena Fide Master (AFM), and have a rating of around 2000 online. Though I really enjoy the speed and excitement of online chess, nothing beats the excitement of a live event, and you will often find me participating in various tournaments all around the Austin area.</p>
-                        <p style="margin-bottom: 1rem;">When I am not in front of the board, I am usually building and experimenting with code. I have been coding since I was six years old, and have developed a few apps. I eventually found a big interest in artificial intelligence (AI), and love learning how it works. I really enjoy tinkering with the code of programs to see how they really work, and how I can make them more effective.</p>
-                        <p>I love participating in Science Olympiad tournaments, Robotics Competitions, and Competitive Math events. In addition to exercising my brain, I love staying active. Basketball, tennis, and table tennis are my favorite sports to play.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- Page 2: Curriculum -->
-        <section id="curriculum" class="page-section fade-in">
+        <!-- Page 1: Curriculum -->
+        <section id="curriculum" class="page-section active fade-in">
             <h1>The <span class="primary-text">Curriculum</span></h1>
             <p class="placeholder-text" style="margin-bottom: 2rem;">We will cater to your students level. This is just
                 the Base Curriculum.</p>
@@ -111,24 +77,82 @@
                     </div>
                 </div>
 
-                <!-- Right Side: Fees -->
-                <div class="curriculum-right card">
-                    <h2>Camp <span class="primary-text">Fees</span></h2>
-                    <ul class="fees-list">
-                        <li>
-                            <span class="weeks">1 Week</span>
-                            <span class="price">$75</span>
-                        </li>
-                        <li>
-                            <span class="weeks">2 Weeks</span>
-                            <span class="price">$125</span>
-                        </li>
-                        <li>
-                            <span class="weeks">3 Weeks</span>
-                            <span class="price">$175</span>
-                        </li>
-                    </ul>
+                <!-- Right Side: Column Container -->
+                <div class="curriculum-right-column">
+                    
+                    <!-- Dates -->
+                    <div class="curriculum-right card">
+                        <h2>Camp <span class="primary-text">Dates</span></h2>
+                        
+                        <h3 style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.8rem;">June</h3>
+                        <ul class="fees-list" style="margin-bottom: 1.8rem;">
+                            <li><span class="weeks">Week 1</span><span style="font-size: 0.95rem;">June 8th - June 12th</span></li>
+                            <li><span class="weeks">Week 2</span><span style="font-size: 0.95rem;">June 15th - June 19th</span></li>
+                            <li><span class="weeks">Week 3</span><span style="font-size: 0.95rem;">June 22nd - June 26th</span></li>
+                        </ul>
+
+                        <h3 style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 0.8rem;">July</h3>
+                        <ul class="fees-list">
+                            <li><span class="weeks">Week 1</span><span style="font-size: 0.95rem;">July 13th - July 17th</span></li>
+                            <li><span class="weeks">Week 2</span><span style="font-size: 0.95rem;">July 20th - July 24th</span></li>
+                            <li><span class="weeks">Week 3</span><span style="font-size: 0.95rem;">July 27th - July 31st</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Fees -->
+                    <div class="curriculum-right card">
+                        <h2>Camp <span class="primary-text">Fees</span></h2>
+                        <ul class="fees-list">
+                            <li>
+                                <span class="weeks">1 Week</span>
+                                <span class="price">$75</span>
+                            </li>
+                            <li>
+                                <span class="weeks">2 Weeks</span>
+                                <span class="price">$125</span>
+                            </li>
+                            <li>
+                                <span class="weeks">3 Weeks</span>
+                                <span class="price">$175</span>
+                            </li>
+                        </ul>
+                    </div>
+
                 </div>
+            </div>
+        </section>
+
+        <!-- Page 2: About Us -->
+        <section id="about-me" class="page-section fade-in">
+            <div class="hero-header" style="margin-bottom: 2rem;">
+                <h1 class="mega-title">About <span class="primary-text">Us</span></h1>
+            </div>
+            
+            <div class="about-grid">
+                
+                <!-- Left Box: Adya -->
+                <div class="about-card card" style="padding: 2.5rem; border-radius: 8px; display: flex; flex-direction: column;">
+                    <img src="assets/adya.jpg" alt="Adya Profile Photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem auto; display: block; border: 3px solid var(--accent-primary); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h2 style="margin-bottom: 1.5rem; text-align: center; color: var(--accent-primary);">Adya</h2>
+                    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start;">
+                        <p style="margin-bottom: 1rem;">Hi! My name is Adya!!!</p>
+                        <p style="margin-bottom: 1rem;">I am currently a sophomore at LASA High School, with a passion for working with kids, and technology! I tutor at Kumon, and serve as a teaching assistant for several classes at my school. These experiences have strengthened my love for education and mentorship.</p>
+                        <p>Outside of academics, I’m especially interested in using technology to improve everyday life, and I’ve built several applications focused on social impact. I have participated in Future Business Leader Conferences, representing my school. Chess has been a big part of my life since childhood, and I’m proud to hold the title of Arena FIDE Master. I also enjoy playing string and wind instruments such as violin, guitar, and flute! I enjoy playing many sports, basketbalI being my favorite! I love attending Robotics Competitions, and have participated in Science Olympiad for 3 years! I plan to pursue a degree in engineering / computer science.</p>
+                    </div>
+                </div>
+
+                <!-- Right Box: Abhi -->
+                <div class="about-card card" style="padding: 2.5rem; border-radius: 8px; display: flex; flex-direction: column;">
+                    <img src="assets/abhi.jpg" alt="Abhi Profile Photo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; margin: 0 auto 1.5rem auto; display: block; border: 3px solid var(--accent-primary); box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                    <h2 style="margin-bottom: 1.5rem; text-align: center; color: var(--accent-primary);">Abhi</h2>
+                    <div style="flex-grow: 1; display: flex; flex-direction: column; justify-content: flex-start;">
+                        <p style="margin-bottom: 1rem;">Hello, I am Abhi!</p>
+                        <p style="margin-bottom: 1rem;">I am a 6th grader at Kealing Middle School! I have been playing on the chessboard ever since I turned five years old. For the last seven years, chess has been a huge part of my life. I currently hold the title of Arena Fide Master (AFM), and have a rating of around 2000 online. Though I really enjoy the speed and excitement of online chess, nothing beats the excitement of a live event, and you will often find me participating in various tournaments all around the Austin area.</p>
+                        <p style="margin-bottom: 1rem;">When I am not in front of the board, I am usually building and experimenting with code. I have been coding since I was six years old, and have developed a few apps. I eventually found a big interest in artificial intelligence (AI), and love learning how it works. I really enjoy tinkering with the code of programs to see how they really work, and how I can make them more effective.</p>
+                        <p>I love participating in Science Olympiad tournaments, Robotics Competitions, and Competitive Math events. In addition to exercising my brain, I love staying active. Basketball, tennis, and table tennis are my favorite sports to play.</p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
