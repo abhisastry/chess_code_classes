@@ -549,4 +549,12 @@ pre {
     .card {
         padding: 1.5rem !important;
     }
+    .curriculum-table th, .curriculum-table td {
+        min-width: 180px;
+        font-size: 0.9rem;
+        padding: 0.8rem 1rem;
+    }
+    .curriculum-table th:first-child, .curriculum-table td:first-child {
+        min-width: 70px;
+    }
 }
