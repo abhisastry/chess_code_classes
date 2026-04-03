@@ -239,8 +239,8 @@ h1 {
     border: 2px dashed var(--accent-primary);
 }
 
-/* Curriculum Split Layout */
-.curriculum-split {
+/* Bottom Info Grid Layout */
+.bottom-info-row {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2.5rem;
@@ -250,13 +250,6 @@ h1 {
 .curriculum-left {
     padding: 2rem;
     border-radius: 8px;
-}
-
-.curriculum-right-column {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    height: 100%;
 }
 
 .dates-split {
@@ -270,7 +263,6 @@ h1 {
     padding: 2rem;
     border-radius: 8px;
     border: 1px solid var(--border-color);
-    flex: 1;
 }
 
 .curriculum-right h2 {
@@ -529,7 +521,7 @@ pre {
 
 /* Phone-specific adjustments */
 @media (max-width: 600px) {
-    .showcase-grid, .curriculum-split, .dates-split, .about-grid, .bento-grid, .reviews-grid, .skills-grid {
+    .showcase-grid, .bottom-info-row, .dates-split, .about-grid, .bento-grid, .reviews-grid, .skills-grid {
         grid-template-columns: 1fr !important;
     }
     .mega-title {
