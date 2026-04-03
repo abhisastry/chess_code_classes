@@ -550,11 +550,11 @@ pre {
         padding: 1.5rem !important;
     }
     .curriculum-table th, .curriculum-table td {
-        min-width: 180px;
+        min-width: 45vw;
         font-size: 0.9rem;
-        padding: 0.8rem 1rem;
+        padding: 0.8rem;
     }
     .curriculum-table th:first-child, .curriculum-table td:first-child {
-        min-width: 70px;
+        min-width: 20vw;
     }
 }
